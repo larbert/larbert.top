@@ -1,2 +1,4 @@
-github.com/larbert/mayfly v0.0.0-20220712134452-0269bbcebdc0 h1:QHcJdrkOeibAXmKxOFyX0gyYlh57JbpfnVpPRKwSPW0=
-github.com/larbert/mayfly v0.0.0-20220712134452-0269bbcebdc0/go.mod h1:vk0pyepBdsCPUxK7Yf/muuflUn5Z1UhUIajp4HBGRAA=
+github.com/larbert/mayflylog v0.0.0-20220818111313-adcd2e92f970 h1:J60JvVhtwpz5hmmd1i3OUjtj8jOr7MwBuHE774AYO1A=
+github.com/larbert/mayflylog v0.0.0-20220818111313-adcd2e92f970/go.mod h1:a8htQs3zhB2tmqTLPHl54KsL0hKIkWDBzUexnCjKGY4=
+github.com/larbert/mayflyweb v0.0.0-20220819130442-fa7b628abe47 h1:Rajc9hZzPRQFPnCYDhGxquJ/zKgBzAGgwpDqy/B6oZ4=
+github.com/larbert/mayflyweb v0.0.0-20220819130442-fa7b628abe47/go.mod h1:G+iYwl5iQ7KLkfGGxs0sQf5qrsWyCa3p8sNYBjZnp28=

@@ -1,21 +1,22 @@
 package main
 
 import (
-	"github.com/larbert/mayfly"
-	"larbert.top/app"
-	"log"
+	"net/http"
+
+	"github.com/larbert/mayflylog"
+	"github.com/larbert/mayflyweb"
 )
 
 func main() {
-	e := mayfly.New()
+	mayflylog.SetLevel(mayflylog.DebugLevel)
 
-	e.LoadHTMLGlob("templates/*")
-	e.Static("/assets", "static")
+	s := mayflyweb.New()
+	s.Get("/", func(ctx *mayflyweb.Context) {
+		ctx.String(http.StatusOK, "hello %s!", "larbert")
+	})
 
-	app.RegisterRoutes(e)
-
-	err := e.Run(":80")
+	err := s.Run(":80")
 	if err != nil {
-		log.Fatalln(err)
+		mayflylog.Error("启动失败")
 	}
 }
